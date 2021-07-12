@@ -21,6 +21,7 @@
             border-radius: 10px;
             position: relative;
             margin: 10px;
+            overflow: hidden;
          }
          .photo img{
              width: 100%;
@@ -47,6 +48,15 @@
              color: white;
          }
 
+         .photo-frame:hover .photo{
+             transform: scale(1.3) rotate(180deg);
+             transition: transform 2s ease-in-out;
+         }
+         .photo-frame:hover  .vinno{
+             transform: scale(1.3) skew(-30deg);
+             transition: transform 2s ease-in-out;
+         }
+
      </style>
 
 </head>
@@ -69,7 +79,7 @@
            
                 <div class="photo-frame">
                     <div class="photo">
-                        <img src="photo.jfif" alt="">
+                        <img class="vinno" src="photo.jfif" alt="">
                     </div>
                     <div class="photo-details">
                         <h3>Tiger Mama Candide</h3>
